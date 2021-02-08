@@ -1,0 +1,414 @@
+:root {
+  --white: hsl(0, 0%, 255%);
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+}
+
+p,
+a {
+  color: var(--grayish-blue);
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(to top, var(--white) 12%, transparent 100%),
+    url("../img/bg-header-desktop.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.header-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.header-logo img {
+  margin: 0 auto;
+}
+
+.header-text {
+  max-width: 560px;
+  align-items: center;
+}
+
+.header-text h1,
+.header-text p {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ios,
+.mac {
+  border-radius: 25px;
+  text-align: center;
+  font-size: 0.937em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  width: 200px;
+  display: block;
+  padding: 15px 0;
+  margin: 10px;
+}
+
+.ios {
+  background: var(--strong-cyan);
+  box-shadow: 1px 1px 3px 0.1em var(--strong-cyan);
+}
+
+.ios:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 1em var(--strong-cyan);
+}
+
+.mac {
+  background: var(--light-blue);
+  box-shadow: 1px 1px 3px 0.1em var(--light-blue);
+}
+
+.mac:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 1em var(--light-blue);
+}
+
+@media (max-width: 375px) {
+  header {
+    background: linear-gradient(to top, var(--white) 12%, transparent 100%),
+      url("../img/bg-header-mobile.png") no-repeat;
+  }
+
+  .header-text p {
+    margin: 0 30px;
+  }
+
+  .btn-download {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+
+.snippets {
+  margin: 100px auto;
+}
+
+.snippets-intro {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.snippets-text {
+  max-width: 560px;
+  margin: 0 auto 70px auto;
+  align-items: center;
+}
+
+.snippets-text h2,
+.snippets-text p {
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.snippets img {
+  position: relative;
+  left: -70px;
+}
+
+.snippets-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.snippets-item {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.snippets-item h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .snippets img {
+    max-width: 300px;
+    margin: auto;
+    left: 0;
+  }
+
+  .snippets-items {
+    max-width: 300px;
+    margin: 30px auto 0 auto;
+  }
+
+  .snippets-item {
+    text-align: center;
+  }
+}
+
+.access-availability {
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.access-availability-text {
+  max-width: 560px;
+  margin: 0 auto 70px auto;
+  align-items: center;
+}
+
+.access-availability-text h2,
+.access-availability-text p {
+  text-align: center;
+  margin: 20px;
+}
+
+.workflow-tools {
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.workflow-tools-text {
+  max-width: 560px;
+  margin: 0 auto 70px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.workflow-tools-text h2,
+.workflow-tools-text p {
+  text-align: center;
+  margin: 20px;
+}
+
+.tools-item {
+  max-width: 320px;
+  margin: 20px;
+  text-align: center;
+}
+
+.tools-item h3 {
+  margin-bottom: 20px;
+}
+
+.tools-icon {
+  margin-bottom: 30px;
+}
+
+.tools-icon img {
+  margin: auto;
+}
+
+@media (max-width: 375px) {
+  .tools-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.companies {
+  max-width: 960px;
+  margin: 100px auto;
+}
+
+.companies .container {
+  justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+  .companies img {
+    max-width: 200px;
+    margin: 30px auto;
+  }
+}
+
+.download {
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.main-text {
+  max-width: 560px;
+  margin: 0 auto 30px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-text h2,
+.main-text p {
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  background: rgba(159, 168, 178, 0.1);
+}
+
+footer a,
+footer p {
+  color: var(--dark-grayish-blue);
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 50px;
+}
+
+.list {
+  margin-right: 70px;
+}
+
+.list-item {
+  padding-bottom: 15px;
+}
+
+.list-item a:hover {
+  color: var(--strong-cyan);
+}
+
+.social-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.facebook {
+  text-indent: -200px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon-facebook.svg") no-repeat;
+}
+
+.twitter {
+  text-indent: -200px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon-twitter.svg") no-repeat;
+}
+
+.instagram {
+  text-indent: -200px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon-instagram.svg") no-repeat;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+  filter: invert(67%) sepia(13%) saturate(2189%) hue-rotate(122deg)
+    brightness(90%) contrast(83%);
+}
+
+.attribution {
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--light-blue);
+}
+
+@media (max-width: 375px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 30px auto;
+  }
+
+  .list {
+    margin: 0 auto;
+  }
+
+  .social-list {
+    margin: 30px auto;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram {
+    font-size: 0px;
+  }
+}
